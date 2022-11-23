@@ -1,0 +1,110 @@
+
+footer {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#36277a+0,e84a61+100 */
+  background: $main_color; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, $main_color 0%, $secondary_color 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, $main_color 0%,$secondary_color 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, $main_color 0%,$secondary_color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  
+  color: white;
+  margin: 1em auto 0;
+  padding: 1em;
+  
+  a {
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    @include breakpoint(mobileonly){
+      display: block;
+    }
+    
+    a {
+      margin: 0.5em;
+    }
+    
+    max-width: $page_width;
+    margin: 0 auto;
+    
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    .copyright {
+      flex: 1 1 auto;
+      text-align: center;
+      margin: 0.25em 0.5em;
+    }
+
+    nav {
+      flex: 0 0 auto;
+      text-align: right;
+
+      @include breakpoint(mobileonly){
+        text-align: center;
+      }
+
+      margin: 0.25em 0.5em;
+
+      ul {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+}
+
+.contact {
+  max-width: $page_width;
+  margin: 0 auto;
+
+  h3 {
+    text-align: center;
+    font-size: 300%;
+    margin: 1em;
+    color: $main_color;
+    font-family: 'Exo', sans-serif;
+  }
+  
+  div.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    margin: 2em auto 5em;
+    
+    font-size: 150%;
+    
+    h4 {
+      font-weight: 200;
+      margin: 0;
+    }
+    
+    div {
+      flex: 1 0 auto;
+      margin: 1em;
+      width: 25%;
+      min-width: 220px;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+      }
+    }
+    
+  }
+  
+}

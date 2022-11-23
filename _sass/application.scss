@@ -1,0 +1,61 @@
+$main_color: #36277a;
+$secondary_color: #e84a61;
+$highlight_color: #fee600;
+$black_color: #0a003d;
+$gray_color: #e2e5ee;
+
+$page_width: 1200px;
+
+@font-face {
+  font-family: "Exo";
+  src: url(fonts/Exo-Light.ttf);
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url(fonts/TitilliumWeb-Light.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", "Helvetica", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: $black_color;
+}
+
+main {
+  section {
+    max-width: $page_width;
+    margin: 0 auto;
+  }
+}
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 800px) {
+      @content;
+    }
+  } @else if $point == phablet {
+    @media (min-width: 400px) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+}
+
+@import "header";
+@import "teaser";
+@import "index";
+@import "benefits";
+@import "footer";
+@import "imprint";

@@ -1,0 +1,29 @@
+section.benefits {
+  //text-align: center;
+  width: 75%;
+  @include breakpoint(mobileonly) {
+    width: 95%;
+  }
+  margin: 5em auto;
+
+  h3 {
+    text-align: center;
+  }
+
+  article {
+    margin: 3em 0;
+    font-weight: 200;
+    font-size: 125%;
+
+    h4 {
+      font-size: 150%;
+      font-weight: 200;
+      margin: 0 0 1em;
+      @include breakpoint(mobileonly) {
+        text-align: center;
+      }
+
+      color: $secondary_color;
+    }
+  }
+}

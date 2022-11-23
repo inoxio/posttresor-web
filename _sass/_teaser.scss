@@ -1,0 +1,63 @@
+.teaserbg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d1647+0,36277a+33,36277a+66,e84a61+100 */
+  background: #1d1647; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #1d1647 0%,
+    #36277a 33%,
+    #36277a 66%,
+    #e84a61 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #1d1647 0%,
+    #36277a 33%,
+    #36277a 66%,
+    #e84a61 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #1d1647 0%,
+    #36277a 33%,
+    #36277a 66%,
+    #e84a61 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  color: white;
+  padding: 0 0 1em;
+}
+
+section.teaser {
+  padding: 0 1em 2em;
+  margin: 5em auto;
+  width: 75%;
+  @include breakpoint(mobileonly) {
+    width: 95%;
+  }
+
+  max-width: 800px;
+
+  h1 {
+    margin: 1em auto;
+
+    font-size: 400%;
+    font-weight: 200;
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    @include breakpoint(mobileonly) {
+      font-size: 300%;
+    }
+  }
+
+  & > p {
+    display: block;
+
+    font-size: 150%;
+    font-weight: 200;
+    font-family: "Exo", sans-serif;
+    text-align: center;
+  }
+}
+
+main .teaser h1 {
+}

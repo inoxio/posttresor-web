@@ -1,0 +1,55 @@
+header {
+  padding: 1em 2em;
+  display: flex;
+  @include breakpoint(mobileonly){
+    display: block;
+  }
+  max-width: $page_width;
+  margin: 0 auto;
+
+  h1 {
+    flex: 0 0 auto;
+    margin: 0;
+    font-weight: 200;
+    font-size: 50px;
+
+    img {
+      width: 65px;
+      margin-right: 10px;
+      vertical-align: -25%;
+    }
+
+    @include breakpoint(mobileonly){
+      font-size: 40px;
+      img {
+        width: 50px;
+      }
+    }
+    
+    a {
+      text-decoration: none;
+    }
+  }
+  nav {
+    flex: 1 1 auto;
+    text-align: right;
+    
+    ul {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+      }
+    }
+
+    @include breakpoint(mobileonly){
+      display: none;
+    }
+  }
+  
+  a {
+    margin: 0 10px 0 0;
+    color: white;
+  }
+  
+}
